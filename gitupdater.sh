@@ -2,7 +2,7 @@
 
 set -u
 
-ROOT_DIR="${1:-.}"
+ROOT_DIR="$(cd "${1:-.}" && pwd)"
 
 UPDATED=()
 UP_TO_DATE=()
